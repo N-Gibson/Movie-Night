@@ -1,0 +1,176 @@
+* {
+  box-sizing: border-box;
+}
+
+body{
+  height: 100%;
+  margin: 0;
+  width: 100%;
+}
+
+.main-header {
+  background-color: #617983;
+  border: 2px solid black;
+  display: flex;
+}
+
+h1 {
+  color: #8A2A0D;
+  font-size: 3em;
+  margin: 30px auto;
+  text-align: center;
+}
+
+.projector {
+  height: 100px;
+  width: 80px;
+}
+
+.night {
+  color: #EABB4A
+}
+
+.search__input {
+  border: 2px solid black;
+  border-radius: 2.5px;
+  display: inline-flex;
+  float: right;
+  height: 35px;
+  justify-content: space-between;
+  margin: 20px;
+}
+
+.search__icon,
+.main__add-image,
+.delete__image {
+  height: 30px;
+  padding: 5px;
+  width: 30px;
+}
+
+.search__icon {
+  background-color: #FFFFFF;
+}
+
+section {
+  border-bottom: 2px solid black;
+  border-left: 2px solid black;
+  border-right: 2px solid black;
+  height: 350px;;
+  padding: 20px;
+}
+
+.inputs__container {
+  width: 100%;
+}
+
+.input {
+  display: block;
+  float: left;
+  font-size: 1em;
+  height: 40px;
+  margin: 10px;
+  padding: 10px;
+  width: 50%;
+}
+
+.title__input {
+  margin-top: 40px;
+}
+
+.button__create__movie {
+  margin-bottom: 0px;
+}
+
+.random__button {
+  margin-top: 270px;
+  width: 100%;
+}
+
+.main {
+  background-color: #D1D2D4;
+  display: flex;
+  flex-wrap: wrap;
+  height: 100vh;
+  margin: 0;
+  padding: 20px;
+}
+
+.card {
+  background-color: whitesmoke;
+  border: 2px solid black;
+  height: 250px;
+  margin: 20px;
+  width: 30%;
+}
+
+.card-header {
+  background-color: #617983;
+  display: flex;
+  justify-content: space-between;
+}
+
+.delete__image {
+  color: white;
+  margin: 10px;
+}
+
+.card__title {
+  color: #8A2A0D;
+  margin: 10px;
+  padding: 5px;
+}
+
+.card__genre {
+  color: #A4956A;
+  margin: 10px;
+}
+
+.fill-bio {
+  color: #586160;
+  margin: 10px;
+}
+
+.winner-all {
+  display: flex;
+}
+
+.winner-card {
+  background-color: whitesmoke;
+  border: 2px solid black;
+  float: right;
+  height: 250px;
+  margin-left: 80px;
+  margin-right: 8px;
+  position: absolute;
+  width: 35%;
+}
+
+.winner-card-header {
+  background-color: #3A3A3C;
+  display: flex;
+  justify-content: space-between;
+}
+
+.winner-card__title {
+  color: #C9252F;
+  margin: 10px;
+  padding: 5px;
+}
+
+.winner-delete__image {
+  color: white;
+  height: 20px;
+  margin: 10px;
+  width: 20px;
+}
+
+.winner-card__genre {
+  color: #F7EE8B;
+  margin: 10px;
+}
+
+.winner-fill-bio {
+  color: #EABB4A;
+  margin: 10px;
+}

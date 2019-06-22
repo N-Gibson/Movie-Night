@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Movie Night</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+  <header class="main-header">
+  <h1>Movie<img class="projector" src="images/projector.svg"><span class="night">Night</span></h1>
+    <div class="search__input">
+      <img class="search__icon" src="images/search.svg">
+      <input type="text" placeholder="Search">
+    </div>
+  </header>
+  <section>
+    <div class="inputs__container">
+      <input class="title__input input" type="text" name="title" placeholder="Movie Title"></input>
+      <input class="genre__input input" type="text" name="genre" placeholder="Movie Genre"></input>
+      <input class="bio__input input" type="text" name="bio" placeholder="Movie Bio"></input>
+      <button class="button__create__movie input">Create Movie</button>
+    </div>
+    <div class="winner-all">
+      <button class="random__button input">Pick Random Movie</button>
+    </div>
+  </section>
+  <main class="main"></main>
+</body>
+<script src="main.js"></script>
+<script src="obj.js"></script>
+</html>
