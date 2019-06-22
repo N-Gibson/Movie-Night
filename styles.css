@@ -78,6 +78,10 @@ section {
   margin-top: 40px;
 }
 
+button:hover {
+  background-image: linear-gradient(to bottom right, rgb(250, 101, 95), #cfb129);
+}
+
 .button__create__movie {
   margin-bottom: 0px;
 }

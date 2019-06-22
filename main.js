@@ -25,7 +25,7 @@ let winnerCircle = () => {
 }
 
 let makeCard = (movieObj) => {
-  main.insertAdjacentHTML('afterbegin', `  <article class="card" data-id=${movieObj.id}>
+  main.insertAdjacentHTML('afterbegin', `  <article class="card" data-id="${movieObj.id}">
   <header class="card-header">
     <p class="card__title">${movieTitle.value}</p>
     <img class="delete__image" src="images/delete.svg">
