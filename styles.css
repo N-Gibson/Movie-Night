@@ -69,13 +69,13 @@ section {
   float: left;
   font-size: 1em;
   height: 40px;
-  margin: 10px;
+  margin: 20px;
   padding: 10px;
   width: 50%;
 }
 
 .title__input {
-  margin-top: 40px;
+  margin-top: 20px;
 }
 
 button:hover {
@@ -87,7 +87,7 @@ button:hover {
 }
 
 .random__button {
-  margin-top: 270px;
+  margin-top: 260px;
   width: 100%;
 }
 
