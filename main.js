@@ -103,6 +103,7 @@ function deleteFromArray() {
   // Need to get id,index of specific card without making a new one and assign that to a local var here so i can run method
   // objectArray.splice(uniqueIndex, 1);
   // deleteFromStorage(objectArray, uniqueIndex);
+  ;
 }
 
 function deleteCard() {
