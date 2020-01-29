@@ -1,30 +1,30 @@
-let objectArray = [];
-let movieTitle = document.querySelector('.title__input');
-let movieBio = document.querySelector('.bio__input');
-let movieGenre = document.querySelector('.genre__input');
-let createMovieButton = document.querySelector('.button__create__movie');
-let randomMovie = document.querySelector('.random__button');
-let main = document.querySelector('.main');
-let winnerCard = document.querySelector('.winner-all');
-let inputs = document.querySelector('.input');
+const objectArray = [];
+const movieTitle = document.querySelector('.title__input');
+const movieBio = document.querySelector('.bio__input');
+const movieGenre = document.querySelector('.genre__input');
+const createMovieButton = document.querySelector('.button__create__movie');
+const randomMovie = document.querySelector('.random__button');
+const main = document.querySelector('.main');
+const winnerCard = document.querySelector('.winner-all');
+const inputs = document.querySelector('.input');
 
-let createHandler = () => {
+const createHandler = () => {
   inputError();
 }
 
-let randomHandler = () => {
+const randomHandler = () => {
   watchRandom();
 }
 
-let mainHandler = () => {
+const mainHandler = () => {
   deleteCard();
 }
 
-let winnerCircle = () => {
+const winnerCircle = () => {
   deleteWinnerCard();
 }
 
-let makeCard = (movieObj) => {
+const makeCard = (movieObj) => {
   main.insertAdjacentHTML('afterbegin', `  <article class="card" data-id="${movieObj.id}">
   <header class="card-header">
     <p class="card__title">${movieTitle.value}</p>
@@ -35,7 +35,7 @@ let makeCard = (movieObj) => {
 </article>`)
 }
 
-let randomPopulator = (rndmMovie) => {
+const randomPopulator = (rndmMovie) => {
   winnerCard.insertAdjacentHTML('afterbegin', `<article class="winner-card" data-id="${rndmMovie.id}">
   <header class="winner-card-header">
     <p class="winner-card__title">${rndmMovie.title}</p>
@@ -46,25 +46,25 @@ let randomPopulator = (rndmMovie) => {
 </article>`)
 }
 
-let makeObject = () => {
-  let newObj = new Movie(Date.now(), movieTitle.value, movieGenre.value, movieBio.value);
+const makeObject = () => {
+  const newObj = new Movie(Date.now(), movieTitle.value, movieGenre.value, movieBio.value);
   objectArray.push(newObj);
   console.log(objectArray);
 }
 
-let watchRandom = () => {
+const watchRandom = () => {
   var tonightsMovie = objectArray[Math.floor(Math.random()*objectArray.length)];
   console.log(tonightsMovie);
   randomPopulator(tonightsMovie);
 }
 
-let clearInputs = () => {
+const clearInputs = () => {
   movieTitle.value = '';
   movieGenre.value = '';
   movieBio.value = '';
 }
 
-let inputError = () => {
+const inputError = () => {
   if(movieTitle.value === '' || movieGenre.value === '' || movieBio.value === '') {
     return;
 } else {
@@ -74,11 +74,11 @@ let inputError = () => {
   }
 }
 
-let deleteCard = () => {
+const deleteCard = () => {
   event.target.closest('.card').remove();
 }
 
-let deleteWinnerCard = () => {
+const deleteWinnerCard = () => {
   event.target.closest('.winner-card').remove();
 }
 
