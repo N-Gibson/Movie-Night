@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 const objectArray = [];
 const movieTitle = document.querySelector('.title__input');
 const movieBio = document.querySelector('.bio__input');
@@ -26,7 +25,6 @@ const winnerCircle = () => {
 }
 
 const makeCard = (movieObj) => {
-=======
 var objectArray = JSON.parse(localStorage.getItem('parsedArray')) || [];
 var movieTitle = document.querySelector('.title__input');
 var movieBio = document.querySelector('.bio__input');
@@ -60,7 +58,6 @@ function winnerCircle() {
 }
 
 function makeCard(movieObj) {
->>>>>>> f47e0bd11cbe886d3b98d80fafbdfe4ffcca7853
   main.insertAdjacentHTML('afterbegin', `  <article class="card" data-id="${movieObj.id}">
   <header class="card-header">
     <p class="card__title">${movieObj.title}</p>
@@ -71,11 +68,7 @@ function makeCard(movieObj) {
 </article>`)
 }
 
-<<<<<<< HEAD
-const randomPopulator = (rndmMovie) => {
-=======
 function randomPopulator(rndmMovie) {
->>>>>>> f47e0bd11cbe886d3b98d80fafbdfe4ffcca7853
   winnerCard.insertAdjacentHTML('afterbegin', `<article class="winner-card" data-id="${rndmMovie.id}">
   <header class="winner-card-header">
     <p class="winner-card__title">${rndmMovie.title}</p>
@@ -86,13 +79,8 @@ function randomPopulator(rndmMovie) {
 </article>`)
 }
 
-<<<<<<< HEAD
-const makeObject = () => {
-  const newObj = new Movie(Date.now(), movieTitle.value, movieGenre.value, movieBio.value);
-=======
 function makeObject() {
   let newObj = new Movie(Date.now(), movieTitle.value, movieGenre.value, movieBio.value);
->>>>>>> f47e0bd11cbe886d3b98d80fafbdfe4ffcca7853
   objectArray.push(newObj);
   console.log(objectArray);
   newMovie = newObj;
@@ -100,31 +88,19 @@ function makeObject() {
   return newObj;
 }
 
-<<<<<<< HEAD
-const watchRandom = () => {
-=======
 function watchRandom() {
->>>>>>> f47e0bd11cbe886d3b98d80fafbdfe4ffcca7853
   var tonightsMovie = objectArray[Math.floor(Math.random()*objectArray.length)];
   console.log(tonightsMovie);
   randomPopulator(tonightsMovie);
 }
 
-<<<<<<< HEAD
-const clearInputs = () => {
-=======
 function clearInputs() {
->>>>>>> f47e0bd11cbe886d3b98d80fafbdfe4ffcca7853
   movieTitle.value = '';
   movieGenre.value = '';
   movieBio.value = '';
 }
 
-<<<<<<< HEAD
-const inputError = () => {
-=======
 function inputError() {
->>>>>>> f47e0bd11cbe886d3b98d80fafbdfe4ffcca7853
   if(movieTitle.value === '' || movieGenre.value === '' || movieBio.value === '') {
     return;
 } else {
@@ -134,7 +110,6 @@ function inputError() {
   }
 }
 
-<<<<<<< HEAD
 const deleteCard = () => {
   event.target.closest('.card').remove();
 }
@@ -147,7 +122,7 @@ createMovieButton.addEventListener('click', createHandler);
 randomMovie.addEventListener('click', randomHandler);
 main.addEventListener('click', mainHandler);
 winnerCard.addEventListener('click', winnerCircle);
-=======
+
 function getId(event) {
   let uniqueId = event.target.closest('.card').getAttribute('data-id');
   return parseInt(uniqueId);
@@ -183,4 +158,3 @@ function deleteWinnerCard() {
     event.target.closest('.winner-card').remove();
   }
 }
->>>>>>> f47e0bd11cbe886d3b98d80fafbdfe4ffcca7853
